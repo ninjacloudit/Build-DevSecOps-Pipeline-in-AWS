@@ -7,7 +7,7 @@ phases:
      java: corretto11
     commands:
       - echo Installing OWASP Dependency Check SCA Tool - `pwd`
-      - gpg --keyserver hkp://keys.gnupg.net --recv-keys F9514E84AE3708288374BBBE097586CFEA37F9A6      
+      - gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys F9514E84AE3708288374BBBE097586CFEA37F9A6      
       - wget https://github.com/jeremylong/DependencyCheck/releases/download/v6.1.2/dependency-check-6.1.2-release.zip 
       - wget https://github.com/jeremylong/DependencyCheck/releases/download/v6.1.2/dependency-check-6.1.2-release.zip.asc
       - gpg --verify dependency-check-*-release.zip.asc
